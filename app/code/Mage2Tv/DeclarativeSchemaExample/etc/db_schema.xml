@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="Mage2Tv_DeclarativeSchemaExample" resource="default" engine="innodb" comment="Mage2Tv Declarative Schema Example">
+        <column name="id" xsi:type="int" padding="11" unsigned="true" identity="true" comment="Brand ID" nullable="false" />
+        <column name="name" xsi:type="varchar" comment="Product Name" nullable="false" length="124" />
+        <column name="description" xsi:type="text" nullable="true" comment="Product Description" />
+        <column name="is_enabled" xsi:type="boolean" comment="Is the product enabled?" nullable="false" default="0" />
+        <column name="created_at" xsi:type="timestamp" default="CURRENT_TIMESTAMP" />
+        <column name="updated_at" xsi:type="timestamp" default="CURRENT_TIMESTAMP" nullable="false" on_update="true"/>
+
+        <column name="website_id" xsi:type="smallint" padding="5" unsigned="true" identity="false" comment="Website ID" nullable="false" />
+
+        <constraint xsi:type="foreign" referenceTable="store_website" referenceId="MAGE2TV_DECLARATIVESCHEMAEXAMPLE_WS_ID_STORE_WS_WS_ID"
+                    referenceColumn="website_id" column="website_id" onDelete="CASCADE">
+            <column name="id"/>
+        </constraint>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+        <constraint xsi:type="unique" referenceId="MAGE2TV_DECLARATIVESCHEMAEXAMPLE_NAME">
+        <column name="name"/>
+    </constraint>
+    </table>
+</schema>

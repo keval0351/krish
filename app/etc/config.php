@@ -234,7 +234,10 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
+        'SimplifiedMagento_Attribute' => 1,
+        'SimplifiedMagento_Database' => 1,
         'SimplifiedMagento_FirstModule' => 1,
+        'SimplifiedMagento_RouterFlow' => 1,
         'Amazon_Core' => 1,
         'Amazon_Login' => 1,
         'Amazon_Payment' => 1,
@@ -244,6 +247,7 @@ return [
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
+        'Mage2Tv_DeclarativeSchemaExample' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1,
         'Yotpo_Yotpo' => 1

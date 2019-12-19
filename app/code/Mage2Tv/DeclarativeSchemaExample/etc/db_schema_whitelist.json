@@ -1,0 +1,18 @@
+{
+    "Mage2Tv_DeclarativeSchemaExample": {
+        "column": {
+            "id": true,
+            "name": true,
+            "description": true,
+            "is_enabled": true,
+            "created_at": true,
+            "updated_at": true,
+            "website_id": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGE2TV_DECLARATIVESCHEMAEXAMPLE_NAME": true,
+            "MAGE2TV_DECLARATIVESCHEMAEXAMPLE_WS_ID_STORE_WS_WS_ID": true
+        }
+    }
+}

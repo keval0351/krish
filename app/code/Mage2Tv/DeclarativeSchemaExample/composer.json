@@ -1,0 +1,17 @@
+{
+  "name": "mage2tv/module-declarative-schema-example",
+  "type": "magento2-module",
+  "description": "Given a deep data structure, access data by dot notation.",
+  "require": {
+    "php": ">=7.1.0",
+    "magento/module-store": "^101.0.0|^100.0.0"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Mage2Tv\\DeclarativeSchemaExample": ""
+    }
+  }
+}
