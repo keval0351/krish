@@ -35,7 +35,7 @@ class AcceptTransactionOnAuthorizenetStep implements TestStepInterface
     private $main;
 
     /**
-     * Sales Order View page.
+     * Sales Order view page.
      *
      * @var SalesOrderView
      */

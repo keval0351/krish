@@ -8,7 +8,7 @@ declare(strict_types=1);
 namespace Magento\Bundle\Block\Catalog\Product\View\Type;
 
 /**
- * Test for Magento\Bundle\Block\Catalog\Product\View\Type\Bundle
+ * Test for Magento\Bundle\Block\Catalog\Product\view\Type\Bundle
  *
  * @magentoDataFixture Magento/Bundle/_files/product.php
  * @magentoDbIsolation disabled
@@ -57,7 +57,7 @@ class BundleTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test for method \Magento\Bundle\Block\Catalog\Product\View\Type\Bundle::getJsonConfig
+     * Test for method \Magento\Bundle\Block\Catalog\Product\view\Type\Bundle::getJsonConfig
      *
      * @return void
      */

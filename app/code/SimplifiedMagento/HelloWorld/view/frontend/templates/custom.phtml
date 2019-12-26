@@ -1,0 +1,13 @@
+<?php
+$model = $block->getData('view_model');
+$hello = $model->getHelloWorld();
+$helloArray = $model->getHelloWorldArray();
+?>
+    <h1><?php echo $hello; ?></h1>
+    <ul>
+<?php foreach ($helloArray as $msg):?>
+    <li><?php echo $msg;?></li>
+<?php endforeach; ?>
+    </ul>
+<h2><?php echo $model->getProductName(); ?></h2>
+<h2><?php echo rand(1,100);?></h2>

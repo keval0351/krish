@@ -34,7 +34,7 @@ class Module implements
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($events);
 
-        // Override Zend\Mvc\View\Http\InjectTemplateListener
+        // Override Zend\Mvc\view\Http\InjectTemplateListener
         // to process templates by Vendor/Module
         $injectTemplateListener = new InjectTemplateListener();
         $sharedEvents->attach(

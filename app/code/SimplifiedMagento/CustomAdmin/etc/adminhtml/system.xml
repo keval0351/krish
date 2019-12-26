@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Custom_Admin" translate="label" sortOrder="200">
+            <label>Custom Admin</label>
+        </tab>
+        <section id="Customoption" translate="label" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Custom Option</label>
+            <tab>Custom_Admin</tab>
+            <resource>SimplifiedMagento_CustomAdmin::parent</resource>
+            <group id="Customgroup" translate="label" type="text" sortOrder="700" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label><![CDATA[Custom Options]]></label>
+                <field id="overridename" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Override Name</label>
+                </field>
+                <field id="date_fields_order" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Override Name</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="time_format" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Time Format</label>
+                    <source_model>Magento\Catalog\Model\Config\Source\TimeFormat</source_model>
+                </field>
+                <field id="year_range" translate="label comment" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Year Range</label>
+                    <comment>Please use a four-digit year format.</comment>
+                    <frontend_model>Magento\Catalog\Block\Adminhtml\Form\Renderer\Config\YearRange</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -29,7 +29,7 @@ class CreateCreditMemoStep implements TestStepInterface
     protected $orderIndex;
 
     /**
-     * Order View Page.
+     * Order view Page.
      *
      * @var SalesOrderView
      */
