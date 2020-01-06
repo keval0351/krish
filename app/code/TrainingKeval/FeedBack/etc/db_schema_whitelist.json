@@ -1,0 +1,20 @@
+{
+    "feedback": {
+        "column": {
+            "entity_id": true,
+            "first_name": true,
+            "last_name": true,
+            "email": true,
+            "rating": true,
+            "message": true,
+            "status": true,
+            "created_at": true,
+            "updated_at": true,
+            "response_message": true,
+            "response_by": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

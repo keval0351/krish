@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="TrainingKeval_FeedBack::customer" title="Feedback" translate="title" module="TrainingKeval_FeedBack" sortOrder="40" resource="Trainingkeval_FeedBack::parent" />
+        <add id="TrainingKeval_FeedBack::feedback_customer" title="Customer Feedback" translate="title" module="TrainingKeval_FeedBack" sortOrder="10" parent="TrainingKeval_FeedBack::customer" action="feedback/customer/index" resource="TrainingKeval_FeedBack::parent" />
+    </menu>
+</config>

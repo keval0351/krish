@@ -1,0 +1,21 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @deprecated
+?>
+<?php if ($block->getRating()) : ?>
+    <div class="ratings-container">
+        <?php foreach ($block->getRating() as $_rating) : ?>
+                <div class="ratings">
+                    <div class="rating-box">
+                        <div class="rating" style="width:50%;"></div>
+                    </div>
+                </div>
+        <?php endforeach; ?>
+    </div>
+<?php else : ?>
+    <?= $block->escapeHtml(__("Rating isn't Available")) ?>
+<?php endif; ?>
