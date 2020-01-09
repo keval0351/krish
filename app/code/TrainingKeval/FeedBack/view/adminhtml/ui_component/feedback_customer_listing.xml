@@ -40,6 +40,14 @@
         </dataProvider>
     </dataSource>
     <container name="listing_top">
+        <exportButton class="Magento\Ui\Component\ExportButton" name="export_button">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="provider" xsi:type="string">feedback_customer_listing.feedback_customer_listing.feedback_customer_columns</item>
+                </item>
+
+            </argument>
+        </exportButton>
         <argument name="data" xsi:type="array">
             <item name="config" xsi:type="array">
                 <item name="template" xsi:type="string">ui/grid/toolbar</item>
