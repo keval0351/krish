@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="admin_system_config_changed_section_general">
+        <observer name="custom_admin_system_config_changed_section_general" instance="TrainingKeval\AdminLoginLog\Observer\ConfigObserver"/>
+    </event>
+    <event name="checkout_cart_product_add_after">
+        <observer name="after_add_to_cart" instance="TrainingKeval\AdminLoginLog\Observer\AddToCartObserver" />
+    </event>
+    <event name="sales_quote_remove_item">
+        <observer name="after_remove_item" instance="TrainingKeval\AdminLoginLog\Observer\RemoveItemFromCartObserver" />
+    </event>
+</config>

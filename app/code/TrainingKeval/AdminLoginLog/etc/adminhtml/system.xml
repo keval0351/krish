@@ -1,0 +1,19 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="eventtracking" translate="label" sortOrder="200">
+            <label>Event Tracker</label>
+        </tab>
+        <section id="event" translate="label" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Event</label>
+            <tab>eventtracking</tab>
+            <resource>TrainingKeval_AdminLoginLog::parent</resource>
+            <group id="eventgroup" translate="label" type="text" sortOrder="700" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label><![CDATA[Event Tracker]]></label>
+                <field id="select_event_to_track" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Select Event To Track</label>
+                    <source_model>TrainingKeval\AdminLoginLog\Model\Config\Source\EventToTrack</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
